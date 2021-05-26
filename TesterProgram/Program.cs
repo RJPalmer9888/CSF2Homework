@@ -40,6 +40,20 @@ namespace TesterProgram
             l2.Password = "lesgo";
             Console.WriteLine(l1);
             Console.WriteLine(l2);
+
+            Console.WriteLine("Contact Information");
+            Console.WriteLine();
+            ContactInfo c1 = new ContactInfo("2832 Fairway Drive", "Belleville", "IL", "62220", "618-531-2417", "phoenixpalmer88@gmail.com");
+            ContactInfo c2 = new ContactInfo();
+            c2.StreetAddress = "6 Campus Edge Drive";
+            c2.City = "Edwardsville";
+            c2.State = "IL";
+            c2.Zip = "62025";
+            c2.Phone = "618-531-2417";
+            c2.Email = "rjpalmer9888@gmail.com";
+            Console.WriteLine(c1);
+            Console.WriteLine();
+            Console.WriteLine(c2);
         }
     }
 }

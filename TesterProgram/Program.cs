@@ -135,7 +135,11 @@ namespace TesterProgram
             MotorHome mh1 = new MotorHome("Winnebega", "Hoopdee", 2004, 803.6f, 4);
             Console.WriteLine(mh1);
 
+            Console.WriteLine("------------------------------------------------------------------------------------");
 
+            Console.WriteLine("Truck\n");
+            Truck tr1 = new Truck("Ford", "F-150", 2004, 322.6f, 140.0f);
+            Console.WriteLine(tr1);
         }
     }
 }

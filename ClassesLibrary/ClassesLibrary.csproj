@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Artist.cs" />
+    <Compile Include="Truck.cs" />
     <Compile Include="MotorHome.cs" />
     <Compile Include="Song.cs" />
     <Compile Include="Library.cs" />

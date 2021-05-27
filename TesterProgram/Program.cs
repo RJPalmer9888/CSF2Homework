@@ -74,6 +74,21 @@ namespace TesterProgram
             Console.WriteLine(cs1);
             Console.WriteLine();
             Console.WriteLine(cs2);
+
+            Console.WriteLine("------------------------------------------------------------------------------------");
+
+            Console.WriteLine("Credit Card Accounts");
+            Console.WriteLine();
+            CreditCardAccount cr1 = new CreditCardAccount(13921239, cs1, 2600, true, .05m);
+            CreditCardAccount cr2 = new CreditCardAccount();
+            cr2.AccountNumber = 13929921;
+            cr2.CustomerInfo = cs2;
+            cr2.Balance = 900;
+            cr2.IsPastDue = false;
+            cr2.AnnualInterestRate = .07m;
+            Console.WriteLine(cr1);
+            Console.WriteLine();
+            Console.WriteLine(cr2);
         }
     }
 }

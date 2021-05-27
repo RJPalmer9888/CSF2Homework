@@ -89,6 +89,19 @@ namespace TesterProgram
             Console.WriteLine(cr1);
             Console.WriteLine();
             Console.WriteLine(cr2);
+
+            Console.WriteLine("------------------------------------------------------------------------------------");
+
+            Console.WriteLine("Books");
+            Console.WriteLine();
+            Book b1 = new Book("Empire","Orson Scott Card", 352);
+            Book b2 = new Book();
+            b2.Title = "Hunger Games";
+            b2.Author = "Jennifer Lawrence";
+            b2.NumberOfPages = 300;
+            Console.WriteLine(b1);
+            Console.WriteLine();
+            Console.WriteLine(b2);
         }
     }
 }

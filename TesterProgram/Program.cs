@@ -22,6 +22,8 @@ namespace TesterProgram
             Console.WriteLine(s2);
             Console.WriteLine();
 
+            Console.WriteLine("------------------------------------------------------------------------------------");
+
             Console.WriteLine("Vehicles");
             Vehicle v1 = new Vehicle("Nissan", "Sentra", 2016, 402.4f);
             Vehicle v2 = new Vehicle();
@@ -33,6 +35,8 @@ namespace TesterProgram
             Console.WriteLine(v2);
             Console.WriteLine();
 
+            Console.WriteLine("------------------------------------------------------------------------------------");
+
             Console.WriteLine("Logins");
             Login l1 = new Login("YaBoi17", "cranked");
             Login l2 = new Login();
@@ -40,6 +44,8 @@ namespace TesterProgram
             l2.Password = "lesgo";
             Console.WriteLine(l1);
             Console.WriteLine(l2);
+
+            Console.WriteLine("------------------------------------------------------------------------------------");
 
             Console.WriteLine("Contact Information");
             Console.WriteLine();
@@ -54,6 +60,20 @@ namespace TesterProgram
             Console.WriteLine(c1);
             Console.WriteLine();
             Console.WriteLine(c2);
+
+            Console.WriteLine("------------------------------------------------------------------------------------");
+
+            Console.WriteLine("Customers");
+            Console.WriteLine();
+            Customer cs1 = new Customer("Kelly", "Palmer", "CSTM1830", c1);
+            Customer cs2 = new Customer();
+            cs2.FirstName = "Ryan";
+            cs2.LastName = "Palmer";
+            cs2.CustomerId = "CSTM2173";
+            cs2.ContactInformation = c2;
+            Console.WriteLine(cs1);
+            Console.WriteLine();
+            Console.WriteLine(cs2);
         }
     }
 }

@@ -102,6 +102,8 @@ namespace TesterProgram
             Console.WriteLine(b1);
             Console.WriteLine();
             Console.WriteLine(b2);
+
+            
         }
     }
 }

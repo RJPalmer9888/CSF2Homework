@@ -63,7 +63,7 @@ namespace ClassesLibrary
                 "{1}" +
                 "Balance: {2:c}\n" +
                 "{3}\n" +
-                "Annual Interest Rate: {4}",
+                "Annual Interest Rate: {4}\n",
                 AccountNumber, CustomerInfo, Balance, IsPastDue ? "Past due" : "Paid", AnnualInterestRate);
         }
 

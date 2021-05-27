@@ -41,6 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Artist.cs" />
+    <Compile Include="MotorHome.cs" />
+    <Compile Include="Song.cs" />
     <Compile Include="Library.cs" />
     <Compile Include="Book.cs" />
     <Compile Include="CreditCardAccount.cs" />

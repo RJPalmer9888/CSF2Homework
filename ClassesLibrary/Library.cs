@@ -40,7 +40,7 @@ namespace ClassesLibrary
             }
 
             //return base.ToString();
-            return string.Format("{0}\n\nAddress:\n{1}\n{2}, {3} {4}\n\nBooks:\n{5}",
+            return string.Format("{0}\n\nAddress:\n{1}\n{2}, {3} {4}\n\nBooks:\n{5}\n",
                 LibraryName, StreetAddress, City, State, Zip, catalog);
         }
     }

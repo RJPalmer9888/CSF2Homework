@@ -11,7 +11,8 @@ namespace TesterProgram
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Students");
+            Console.WriteLine("Students\n");
+
             Student s1 = new Student("Ryan","Palmer","54092401",3.6f);
             Student s2 = new Student();
             s2.FirstName = "Dababy";
@@ -24,7 +25,8 @@ namespace TesterProgram
 
             Console.WriteLine("------------------------------------------------------------------------------------");
 
-            Console.WriteLine("Vehicles");
+            Console.WriteLine("Vehicles\n");
+
             Vehicle v1 = new Vehicle("Nissan", "Sentra", 2016, 402.4f);
             Vehicle v2 = new Vehicle();
             v2.Make = "Hyundai";
@@ -37,7 +39,8 @@ namespace TesterProgram
 
             Console.WriteLine("------------------------------------------------------------------------------------");
 
-            Console.WriteLine("Logins");
+            Console.WriteLine("Logins\n");
+
             Login l1 = new Login("YaBoi17", "cranked");
             Login l2 = new Login();
             l2.Username = "Dababy";
@@ -47,8 +50,8 @@ namespace TesterProgram
 
             Console.WriteLine("------------------------------------------------------------------------------------");
 
-            Console.WriteLine("Contact Information");
-            Console.WriteLine();
+            Console.WriteLine("Contact Information\n");
+
             ContactInfo c1 = new ContactInfo("2832 Fairway Drive", "Belleville", "IL", "62220", "618-531-2417", "phoenixpalmer88@gmail.com");
             ContactInfo c2 = new ContactInfo();
             c2.StreetAddress = "6 Campus Edge Drive";
@@ -63,8 +66,8 @@ namespace TesterProgram
 
             Console.WriteLine("------------------------------------------------------------------------------------");
 
-            Console.WriteLine("Customers");
-            Console.WriteLine();
+            Console.WriteLine("Customers\n");
+
             Customer cs1 = new Customer("Kelly", "Palmer", "CSTM1830", c1);
             Customer cs2 = new Customer();
             cs2.FirstName = "Ryan";
@@ -77,8 +80,8 @@ namespace TesterProgram
 
             Console.WriteLine("------------------------------------------------------------------------------------");
 
-            Console.WriteLine("Credit Card Accounts");
-            Console.WriteLine();
+            Console.WriteLine("Credit Card Accounts\n");
+
             CreditCardAccount cr1 = new CreditCardAccount(13921239, cs1, 2600, true, .05m);
             CreditCardAccount cr2 = new CreditCardAccount();
             cr2.AccountNumber = 13929921;
@@ -92,8 +95,8 @@ namespace TesterProgram
 
             Console.WriteLine("------------------------------------------------------------------------------------");
 
-            Console.WriteLine("Books");
-            Console.WriteLine();
+            Console.WriteLine("Books\n");
+
             Book b1 = new Book("Empire","Orson Scott Card", 352);
             Book b2 = new Book();
             b2.Title = "Hunger Games";
@@ -105,10 +108,34 @@ namespace TesterProgram
 
             Console.WriteLine("------------------------------------------------------------------------------------");
 
-            Console.WriteLine("Library");
+            Console.WriteLine("Library\n");
             List<Book> books = new List<Book>() { b1, b2 };
             Library li1 = new Library(books,"Books R Us","1 Lemon Tree Rd","Montgomery","Alabama", "72940");
             Console.WriteLine(li1);
+
+            Console.WriteLine("------------------------------------------------------------------------------------");
+
+            Console.WriteLine("Songs\n");
+
+            Song so1 = new Song("Blockbuster Night Pt. 1", "Run The Jewels", 145);
+            Song so2 = new Song("2100", "Run The Jewels", 182);
+            Console.WriteLine(so1);
+            Console.WriteLine(so2);
+
+            Console.WriteLine("------------------------------------------------------------------------------------");
+
+            Console.WriteLine("Artists\n");
+            List<Song> tracks = new List<Song>() { so1, so2 };
+            Artist ar1 = new Artist(tracks, "Run The Jewels", "Hip Hop");
+            Console.WriteLine(ar1);
+
+            Console.WriteLine("------------------------------------------------------------------------------------");
+
+            Console.WriteLine("Motor Home\n");
+            MotorHome mh1 = new MotorHome("Winnebega", "Hoopdee", 2004, 803.6f, 4);
+            Console.WriteLine(mh1);
+
+
         }
     }
 }

@@ -54,7 +54,7 @@ namespace ClassesLibrary
         {
             return string.Format("Name: {0} {1}\n" +
                 "Customer ID: {2}\n" +
-                "Contact Information: \n{3}\n",
+                "\nContact Information: \n{3}\n",
                 FirstName, LastName, CustomerId, ContactInformation);
         }
 

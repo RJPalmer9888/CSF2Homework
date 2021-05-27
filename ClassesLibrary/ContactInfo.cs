@@ -69,7 +69,7 @@ namespace ClassesLibrary
             return string.Format("{0}\n" +
                 "{1}, {2} {3}\n" +
                 "Phone: {4}\n" +
-                "Email: {5}",
+                "Email: {5}\n",
                 StreetAddress, City, State, Zip, Phone, Email);
         }
 

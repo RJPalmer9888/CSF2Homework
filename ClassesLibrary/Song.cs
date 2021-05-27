@@ -6,24 +6,24 @@ using System.Threading.Tasks;
 
 namespace ClassesLibrary
 {
-    public class Book
+    public class Song
     {
         //fields
 
         //properties
         public string Title { get; set; }
-        public string Author { get; set; }
-        public int NumberOfPages { get; set; }
+        public string Artist { get; set; }
+        public int LengthInSeconds { get; set; }
 
         //ctors
-        public Book(string title, string author, int numberOfPages)
+        public Song(string title, string artist, int lengthInSeconds)
         {
             Title = title;
-            Author = author;
-            NumberOfPages = numberOfPages;
+            Artist = artist;
+            LengthInSeconds = lengthInSeconds;
         }
 
-        public Book()
+        public Song()
         {
 
         }
@@ -32,8 +32,8 @@ namespace ClassesLibrary
         public override string ToString()
         {
             //return base.ToString();
-            return string.Format("Title: {0}\nAuthor: {1}\nPages: {2}\n",
-                Title, Author, NumberOfPages);
+            return string.Format("Title: {0}\nArtist: {1}\nLength: {2}\n",
+                Title, Artist, LengthInSeconds);
         }
     }
 }

@@ -103,7 +103,12 @@ namespace TesterProgram
             Console.WriteLine();
             Console.WriteLine(b2);
 
-            
+            Console.WriteLine("------------------------------------------------------------------------------------");
+
+            Console.WriteLine("Library");
+            List<Book> books = new List<Book>() { b1, b2 };
+            Library li1 = new Library(books,"Books R Us","1 Lemon Tree Rd","Montgomery","Alabama", "72940");
+            Console.WriteLine(li1);
         }
     }
 }
